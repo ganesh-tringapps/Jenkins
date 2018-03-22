@@ -31,10 +31,10 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
-    compile project(':sdk-common-1.120.0')
-    compile project(':sdk-commonwidget-1.120.0')
-    compile project(':sdk-videowidget-1.120.0')
+    implementation project(':sdk-common-1.120.0')
+    implementation project(':sdk-commonwidget-1.120.0')
+    implementation project(':sdk-videowidget-1.120.0')
 
-    compile 'com.google.android.exoplayer:exoplayer:r1.5.10'
-    compile 'com.google.protobuf.nano:protobuf-javanano:3.0.0-alpha-7'
+    implementation 'com.google.android.exoplayer:exoplayer:r1.5.10'
+    implementation 'com.google.protobuf.nano:protobuf-javanano:3.0.0-alpha-7'
 }
