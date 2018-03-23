@@ -20,7 +20,22 @@ android {
     dataBinding {
         enabled = true
     }
+    flavorDimensions "type"
 
+    productFlavors {
+        demo {
+            applicationIdSuffix ".demo"
+            versionNameSuffix "-demo"
+            dimension "type"
+
+        }
+        full {
+            applicationIdSuffix ".full"
+            versionNameSuffix "-full"
+            dimension "type"
+
+        }
+    }
 }
 
 dependencies {
