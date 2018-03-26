@@ -7,7 +7,8 @@ android {
         minSdkVersion 21
         targetSdkVersion 26
         versionCode 1
-        versionName "1.0"
+        def env = System.getenv()
+        versionName "1." + env['BUILD_NUMBER']
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -49,6 +50,8 @@ dependencies {
     implementation project(':sdk-common-1.120.0')
     implementation project(':sdk-commonwidget-1.120.0')
     implementation project(':sdk-videowidget-1.120.0')
+
+    implementation 'net.hockeyapp.android:HockeySDK:5.1.0'
 
     implementation 'com.google.android.exoplayer:exoplayer:r1.5.10'
     implementation 'com.google.protobuf.nano:protobuf-javanano:3.0.0-alpha-7'
