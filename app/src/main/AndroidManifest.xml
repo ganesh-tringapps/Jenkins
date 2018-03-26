@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+            <meta-data
+                android:name="net.hockeyapp.android.appIdentifier"
+                android:value="a0b24a19e7874a9ebf872c245162c219" />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
