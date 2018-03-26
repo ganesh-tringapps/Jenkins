@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         binding.videoView.setEventListener(new VrEventListener());
         binding.start.setOnClickListener(this);
-?
     }
 
     @Override
